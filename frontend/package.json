@@ -1,0 +1,20 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "esbuild ./src --servedir=./static --outfile=./static/app.js --bundle",
+    "build": "esbuild ./src --bundle --sourcemap --minify --outfile=build/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "esbuild": "^0.14.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
